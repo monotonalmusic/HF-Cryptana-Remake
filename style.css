@@ -1,0 +1,169 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+/*header*/
+
+#header-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+}
+
+/*top*/
+
+#top-div {
+    height: 100vh;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/slider02.jpg");
+    background-size: cover;
+}
+
+#top-logo {
+    width: 50%;
+}
+
+#top-text-div {
+    margin-top: 30vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-content-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+/*button*/
+
+.pretty-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    width: 250px;
+  }
+  
+  .pretty-button:hover {
+    background-color: #F07505;
+  }
+
+
+/*burger menu*/
+
+.menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+  }
+
+nav a {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+#nav-right {
+    display: none;
+}
+
+  
+.bar {
+    border-radius: 15px;
+    width: 25px;
+    height: 3px;
+    background-color: #F07505;
+    margin: 5px 0;
+}
+  
+.menu {
+    left: 0%;
+    width: 100%;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 85px;
+    text-align: center;
+    display: none;
+}
+  
+li {
+    padding: 10px;
+    list-style: none;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.transform {
+    transform: rotate(-30deg);
+}
+  
+.menu.active {
+    display: block;
+    z-index: 1;
+
+}
+
+.menu-items {
+    color: white;
+}
+
+/*middle*/
+
+#middle-div {
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.box {
+    height: 150px;
+    width: 80%;
+    background-color: #005DE8;
+    border-radius: 15px;
+}
+
+.top-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-button {
+    height: 50px;
+    width: 100px;
+}
