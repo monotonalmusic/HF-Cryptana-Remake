@@ -182,7 +182,10 @@ a {
 }
 
 .top-box {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
 
@@ -382,5 +385,15 @@ a {
 
     #footer-bottom-div {
         gap: 50px;
+    }
+
+    .box {
+        padding: 100px;
+    }
+
+    .top-box {
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 0px;
     }
 }
