@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+p {
+    color: white;
+}
+
 /*header*/
 
 #header-div {
@@ -53,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 /*button*/
 
 .pretty-button {
-    background-color: transparent;
+    background-color: #F07505;
     border: 1px solid white;
     border-radius: 8px;
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
@@ -74,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .pretty-button:hover {
-    background-color: #F07505;
+    background-color: transparent;
   }
 
 
@@ -147,23 +151,197 @@ a {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
     gap: 30px;
 }
 
 .box {
-    height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 200px;
     width: 80%;
     background-color: #005DE8;
     border-radius: 15px;
+    gap: 15px;
 }
 
 .top-box {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .box-button {
+    height: 75px;
+    width: 150px;
+}
+
+.box-icon {
+    height: 75px;
+    width: 75px;
+}
+
+.box-text {
+    color: white;
+}
+
+/*slider*/
+
+#slider-div {
+    height: 60vh;
+}
+
+.slider {
+    display: grid;
+    grid-template: "slider";
+    place-items: center;
+    place-content: center;
+    overflow: hidden;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    width: 100vw;
+    height: 60vh;
+}
+
+.slider-slides {
+    max-width: 100vw;
+    grid-row: 1 / 7;
+    grid-column: 1 / 7;
+}
+.slider-slide {
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+#slider-overlay {
+    z-index: 1;
+    grid-row: 3 / 5;
+    grid-column: 2/6;
+    padding: 10px;
+}
+
+#slider-overlay h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#slider-overlay p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*form*/
+
+#form-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+#form-header {
+    text-align: center;
+    color: #003C96;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+#subscription-form {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+
+ #submit-subscription {
     height: 50px;
-    width: 100px;
+    border-radius: 30px;
+    background-color: #03a851;
+ }
+
+ #submit-subscription:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+ }
+
+ .valid-input {
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    height: 30px;
+    width: 100%;
+ }
+
+.valid-input:valid {
+    border: 1px solid #03a851;
+ }
+
+
+#subscription-form textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+}
+
+/*footer*/
+
+#footer-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: #005DE8;
+    color: white;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+}
+
+#footer-middle-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 20px;
+
+}
+
+#footer-address-div {
+    text-align: center;
+}
+
+#footer-contact-div {
+    text-align: center;
+}
+
+#footer-bottom-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
+#footer-app-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
