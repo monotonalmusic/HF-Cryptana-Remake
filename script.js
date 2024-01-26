@@ -43,3 +43,21 @@ function changeImage() {
 };
 
 setInterval(changeImage, 5000);
+
+//form
+
+let form = document.getElementById('subscription-form');
+let subHeader = document.getElementById('sub-header');
+
+
+console.log('Adding event listener to form:', form);
+
+form.addEventListener('submit', (e) => {
+    console.log('Form submitted');
+    e.preventDefault();
+    let nombre = document.getElementById('fuldenavn').value;
+    let email = document.getElementById('email').value;
+    console.log('Nombre:', nombre);
+    form.classList.add('hidden');
+    subHeader.innerHTML = `Thank you for messaging us ${nombre}! An email has been sent to ${email}`;
+});
