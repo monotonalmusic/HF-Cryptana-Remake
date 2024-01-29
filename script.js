@@ -8,6 +8,59 @@ function toggleMenu() {
     console.log('Menu toggled');
 };
 
+//gallery
+
+function GalleryItem(id, src, alt, buttonText,boxText){
+    this.id = id;
+    this.src = src;
+    this.alt = alt;
+    this.buttonText = buttonText;
+    this.boxText = boxText;
+}
+
+let box1 = new GalleryItem('box-1-div', 
+'/assets/icons8-wallet-96.png', 
+'', 
+'Investering', 
+'Investering er en måde at tjene penge på, ved at købe aktier i et firma, og derefter sælge dem igen, når de er steget i værdi.');
+
+let box2 = new GalleryItem('box-2-div', 
+'/assets/icons8-euro-96.png', 
+'', 
+'Køb valuta', 
+'Investering er en måde at tjene penge på, ved at købe aktier i et firma, og derefter sælge dem igen, når de er steget i værdi.');
+
+let box3 = new GalleryItem('box-3-div', 
+'/assets/icons8-crypto-96.png', 
+'', 
+'Krypto', 
+'Krypto er fremtiden, investere nu.');
+
+let box4 = new GalleryItem('box-4-div', 
+'/assets/icons8-stocks-96.png', 
+'', 
+'Se kurser', 
+'Se kurser, live, på aktier, valuta og kryptovaluta.');
+
+let boxes = [box1, box2, box3, box4];
+
+let middleDiv = document.querySelector('#middle-div');
+
+boxes.forEach(box => {
+    let newBox = document.createElement('div');
+    newBox.id = box.id;
+    newBox.classList.add('box');
+    newBox.innerHTML = 
+    `
+        <div class="top-box">
+            <img src="${box.src}" alt="${box.alt} class="box-icon">
+            <button class="box-button pretty-button">${box.buttonText}
+        </div>
+        <p class="box-text">${box.boxText}</p>
+    `
+    middleDiv.append(newBox);
+});
+
 
 //slider
 

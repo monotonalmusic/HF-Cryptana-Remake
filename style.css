@@ -255,6 +255,17 @@ a {
     font-size: 1rem;
 }
 
+#slider-overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay-text {
+    text-align: center;
+}
+
 /*form*/
 
 #form-div {
@@ -405,5 +416,9 @@ a {
         padding-left: 50px;
         padding-right: 50px;
         gap: 0px;
+    }
+
+    #overlay-text {
+        width: 80%;
     }
 }
