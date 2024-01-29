@@ -28,7 +28,7 @@ let box2 = new GalleryItem('box-2-div',
 '/assets/icons8-euro-96.png', 
 '', 
 'Køb valuta', 
-'Investering er en måde at tjene penge på, ved at købe aktier i et firma, og derefter sælge dem igen, når de er steget i værdi.');
+'Køb valuta, og se kurserne live. Vi har alle valutaer, og du kan købe dem med det samme.');
 
 let box3 = new GalleryItem('box-3-div', 
 '/assets/icons8-crypto-96.png', 
