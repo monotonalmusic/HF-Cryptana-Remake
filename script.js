@@ -57,7 +57,7 @@ boxes.forEach(box => {
             <button class="box-button pretty-button">${box.buttonText}
         </div>
         <p class="box-text">${box.boxText}</p>
-    `
+    `;
     middleDiv.append(newBox);
 });
 
