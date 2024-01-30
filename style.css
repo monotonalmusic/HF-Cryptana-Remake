@@ -130,7 +130,7 @@ nav a {
     width: 100%;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
     position: absolute;
-    top: 85px;
+    top: 20vw;
     text-align: center;
     display: none;
 }
@@ -394,6 +394,11 @@ a {
     .bar {
         width: 50px;
     }
+
+    .menu {
+        top: 15vw;
+    }
+
     
     .menu-toggle {
         padding: 30px;

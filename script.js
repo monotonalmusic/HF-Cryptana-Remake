@@ -64,38 +64,43 @@ boxes.forEach(box => {
 
 //slider
 
+let slideData = [
+    {
+        src:'/assets/slider01.jpg',
+        alt:'Billede 1',
+        header: 'Kontakt din ekspert',
+        description: 'Cryptera Invest har døgnservice, så du kan altid kontakte os, hvis du har spørgsmål eller brug for hjælp.'
+    }
+    ,
+    {
+        src:'/assets/slider03.jpg',
+        alt:'Billede 2',
+        header: 'Investere i din fremtid',
+        description: 'Bruge en sikker og pålidelig platform til at investere i din fremtid.'
+    }
+];
+
+
+
 let slider = document.querySelector('.slider-slide');
 let sliderHeader = document.querySelector('#overlay-header');
 let sliderPara = document.querySelector('#overlay-text');
-
-let sliderArray = [
-    "/assets/slider01.jpg",
-    "/assets/slider03.jpg"
-];
-
-let sliderTextHeader = [
-    "Kontakt din ekspert",
-    "Investere i din fremtid"
-];
-
-let sliderTextPara = [
-    "Cryptera Invest har døgnservice, så du kan altid kontakte os, hvis du har spørgsmål eller brug for hjælp.",
-    "Bruge en sikker og pålidelig platform til at investere i din fremtid."
-];
-
+ 
 let i = 1;
 
 function changeImage() {
-    slider.src = sliderArray[i];
-    sliderHeader.innerHTML = sliderTextHeader[i];
-    sliderPara.innerHTML = sliderTextPara[i];
+    slider.src = slideData[i].src;
+    console.log(slider.src)
+    sliderHeader.innerHTML = slideData[i].header;
+    sliderPara.innerHTML = slideData[i].description;
     i++;
-    if (i >= sliderArray.length) {
+    if (i >= slideData.length) {
         i = 0;
     }
 };
 
 setInterval(changeImage, 5000);
+
 
 //form
 
