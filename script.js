@@ -19,25 +19,25 @@ function GalleryItem(id, src, alt, buttonText,boxText){
 }
 
 let box1 = new GalleryItem('box-1-div', 
-'/assets/icons8-wallet-96.png', 
+'./assets/icons8-wallet-96.png', 
 '', 
 'Investering', 
 'Investering er en måde at tjene penge på, ved at købe aktier i et firma, og derefter sælge dem igen, når de er steget i værdi.');
 
 let box2 = new GalleryItem('box-2-div', 
-'/assets/icons8-euro-96.png', 
+'./assets/icons8-euro-96.png', 
 '', 
 'Køb valuta', 
 'Køb valuta, og se kurserne live. Vi har alle valutaer, og du kan købe dem med det samme.');
 
 let box3 = new GalleryItem('box-3-div', 
-'/assets/icons8-crypto-96.png', 
+'./assets/icons8-crypto-96.png', 
 '', 
 'Krypto', 
 'Krypto er fremtiden, investere nu.');
 
 let box4 = new GalleryItem('box-4-div', 
-'/assets/icons8-stocks-96.png', 
+'./assets/icons8-stocks-96.png', 
 '', 
 'Se kurser', 
 'Se kurser, live, på aktier, valuta og kryptovaluta.');
@@ -66,14 +66,14 @@ boxes.forEach(box => {
 
 let slideData = [
     {
-        src:'/assets/slider01.jpg',
+        src:'./assets/slider01.jpg',
         alt:'Billede 1',
         header: 'Kontakt din ekspert',
         description: 'Cryptera Invest har døgnservice, så du kan altid kontakte os, hvis du har spørgsmål eller brug for hjælp.'
     }
     ,
     {
-        src:'/assets/slider03.jpg',
+        src:'./assets/slider03.jpg',
         alt:'Billede 2',
         header: 'Investere i din fremtid',
         description: 'Bruge en sikker og pålidelig platform til at investere i din fremtid.'
